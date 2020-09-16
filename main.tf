@@ -4,15 +4,15 @@ provider "okta" {
   api_token = "00DOd-xVcpbabW_7mSE48RZyb6Jo94-1o1rmnJ_GYf"
 }
 
-resource "okta_user" "one" {
-  first_name = "demo"
+resource "okta_user" "two" {
+  first_name = "Jay"
   last_name  = "terraform"
-  login      = "sandeep4597mac@gmail.com"
-  email      = "sandeep4597mac@gmail.com"
+  login      = "aws4597labs@gmail.com"
+  email      = "aws4597labs@gmail.com"
   status     = "STAGED"
 }
 
-resource "okta_group" "example" {
-  name        = "Example"
-  description = "My Example Group"
+resource "okta_group" "demo" {
+  name        = "demo"
+  description = "My demo Group"
 }
